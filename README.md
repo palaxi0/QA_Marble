@@ -2,7 +2,7 @@
 Marble QA Automation
 # Pasos para instalacion
 - Clonar el repositorio
-- Utilizar el comando "behave features/GoogleSearch.feature"
+- Utilizar el comando "behave features/GoogleSearch.feature" estando en la raiz.
 
 
 
