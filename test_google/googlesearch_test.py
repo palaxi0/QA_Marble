@@ -1,6 +1,6 @@
 from selenium import webdriver
 import unittest
-from QA_Marble.core import googlesearch
+from core import googlesearch
 
 class Testing_search_google_correction(unittest.TestCase):
     instance = None
@@ -12,15 +12,14 @@ class Testing_search_google_correction(unittest.TestCase):
         return cls.instance
 
     def setUp(self):
-        self.driver = webdriver.Chrome("../driver/chromedriver")
+        self.driver = webdriver.Chrome("/Users/solorfp/Desktop/Marble/QA_Marble/driver/chromedriver")
         self.driver.maximize_window()
 
     def test_1_navigate_to_google(self):
         googlesearch.navigate_to_google(self)
 
-    def test_2_google_search(self, word_to_search):
-        self.word_to_search = word_to_search
-        googlesearch.google_search(self.word_to_search)
+    def test_2_google_search(self, word):
+        googlesearch.google_search(self, word)
 
     def test_3_google_correct_search(self):
         googlesearch.correct_search(self)
