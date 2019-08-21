@@ -6,7 +6,7 @@ Marble QA Automation
 
 
 
-#Requerimientos en casos de no bajar el venv
+# Requerimientos en casos de no bajar el venv
 - pip install selenium
 - pip install behave
 
